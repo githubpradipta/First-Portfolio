@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@1,500&family=Poppins:wght@300;500;600&display=swap');
+:root{
+    --primary:#3DCFD3;
+    --dark:#000a1f;
+    --liteback:#dddddd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color: var(--dark);
+    height: 900px;
+    clip-path: polygon(0 0, 100% 0,100% 100%,25% 83%,0 100%);
+}
+
+header nav{
+    display: flex;
+    max-width: 1500px;
+    margin: 0px auto;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 24px;
+}
+nav .left{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.left div{
+    position: relative;
+    left: -26px;
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+nav .left{
+    margin-right: 30px;
+    cursor: pointer;
+}
+nav .left img{
+    width: 100px;
+}
+nav .mid ul{
+    display: flex;
+}
+nav .mid ul li{
+    list-style: none;
+}
+nav .mid ul a{
+    color: white;
+    padding: 0px 13px;
+    text-decoration: none;
+    font-size:17px;
+    text-transform: uppercase;
+    transition: color .5s;
+}
+nav .mid ul a:hover{
+    color: var(--primary);
+}
+nav .right{
+    flex: 1;
+    text-align: right;
+}
+.btn{
+    width: 150px;
+    height: 47px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    outline: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+.btn:hover{
+    background-color:transparent;
+    color:var(--primary);
+    border:2px solid var(--primary);
+}
+.hero{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.hero .left{
+   color: white;
+   padding: 223px 10px;
+   margin-right: 50px;
+   text-align: right;
+   width: 542px;
+}
+.hero img{
+    width: 430px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+.hero .left h6{
+    font-size: 26px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    color: var(--primary);
+}
+.hero .left h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.hero .left h1 span{
+    font-size: 45px;
+    color: var(--primary);
+     
+}
+.hero .left h1{
+    line-height: 50px;
+}
+.hero .left p{
+    padding-top: 20px;
+}
+.hero .left button{
+    width: 200px;
+    height: 49px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    margin-top: 50px;
+    font-weight:600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.hero .left button:hover{
+    background-color: var(--primary);
+    color: black;
+    outline: none;
+
+}
