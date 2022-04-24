@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@1,500&family=Poppins:wght@300;500;600&display=swap');
-:root{
-    --primary:#3DCFD3;
-    --dark:#000a1f;
-    --liteback:#dddddd;
-}
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-font-smotthing:antialiased;
-}
-header{
-    background-color: var(--dark);
-    height: 900px;
-    clip-path: polygon(0 0, 100% 0,100% 100%,25% 83%,0 100%);
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #000a1f;
+    --liteback: #848282;
 }
 
-header nav{
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smotthing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--dark);
+    height: 900px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 83%, 0 100%);
+    box-shadow: 2px 2px rgb(165, 165, 165);
+}
+
+header nav {
     display: flex;
     max-width: 1500px;
     margin: 0px auto;
@@ -23,47 +32,57 @@ header nav{
     font-family: 'Poppins', sans-serif;
     padding-top: 24px;
 }
-nav .left{
+
+nav .left {
     color: white;
     display: flex;
     align-items: center;
 }
-.left div{
+
+.left div {
     position: relative;
     left: -26px;
     font-size: 25px;
     font-weight: bolder;
-    
+
 }
-nav .left{
+
+nav .left {
     margin-right: 30px;
     cursor: pointer;
 }
-nav .left img{
+
+nav .left img {
     width: 100px;
 }
-nav .mid ul{
+
+nav .mid ul {
     display: flex;
 }
-nav .mid ul li{
+
+nav .mid ul li {
     list-style: none;
 }
-nav .mid ul a{
+
+nav .mid ul a {
     color: white;
     padding: 0px 13px;
     text-decoration: none;
-    font-size:17px;
+    font-size: 17px;
     text-transform: uppercase;
     transition: color .5s;
 }
-nav .mid ul a:hover{
+
+nav .mid ul a:hover {
     color: var(--primary);
 }
-nav .right{
+
+nav .right {
     flex: 1;
     text-align: right;
 }
-.btn{
+
+.btn {
     width: 150px;
     height: 47px;
     background-color: var(--primary);
@@ -76,68 +95,321 @@ nav .right{
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.3s;
-    
+
 }
-.btn:hover{
-    background-color:transparent;
-    color:var(--primary);
-    border:2px solid var(--primary);
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
 }
-.hero{
+
+.hero {
     display: flex;
     max-width: 1200px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
 }
-.hero .left{
-   color: white;
-   padding: 223px 10px;
-   margin-right: 50px;
-   text-align: right;
-   width: 542px;
+
+.hero .left {
+    color: white;
+    padding: 223px 10px;
+    margin-right: 50px;
+    text-align: right;
+    width: 542px;
 }
-.hero img{
+
+.hero img {
     width: 430px;
     margin-left: 50px;
     padding-top: 40px;
 }
-.hero .left h6{
+
+.hero .left h6 {
     font-size: 26px;
     padding-bottom: 10px;
     font-weight: 100;
     color: var(--primary);
 }
-.hero .left h1{
+
+.hero .left h1 {
     font-size: 55px;
     margin-bottom: 20px;
 }
-.hero .left h1 span{
+
+.hero .left h1 span {
     font-size: 45px;
     color: var(--primary);
-     
+
 }
-.hero .left h1{
+
+.hero .left h1 {
     line-height: 50px;
 }
-.hero .left p{
+
+.hero .left p {
     padding-top: 20px;
 }
-.hero .left button{
+
+.hero .left button {
     width: 200px;
     height: 49px;
     background-color: transparent;
     border: 2px solid var(--primary);
     color: var(--primary);
     margin-top: 50px;
-    font-weight:600;
+    font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 3px;
     transition: all 0.3s;
 }
-.hero .left button:hover{
+
+.hero .left button:hover {
     background-color: var(--primary);
     color: black;
     outline: none;
 
+}
+
+.about .container .img img {
+    width: 340px;
+    padding-right: 40px;
+}
+
+.about .container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    align-items: center;
+
+}
+
+.about .container .text {
+    padding: 0px 40px;
+}
+
+.about .container .text h1 {
+    font-size: 35px;
+}
+
+.about .container .text h1 span {
+    color: var(--primary);
+}
+
+.about .container .text h3 {
+    font-size: 25px;
+    font-weight: 200;
+    padding: 20px 0px;
+}
+
+.about .container .text p {
+    color: var(--liteback);
+
+}
+
+.about {
+    height: 530px;
+}
+
+.about .container .text a img {
+    width: 30px;
+    padding: 0px 4px;
+}
+
+.about .container .text #fb {
+    width: 42px;
+}
+
+.about .container .text #insta {
+    width: 42px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about .container .text a {
+    padding: 6px 0px;
+}
+
+.services {
+    height: 1100px;
+    background-color: #dddddd;
+}
+
+.services .section-heading {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    padding-top: 100px;
+}
+
+.services .section-heading h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.services .section-heading h1 span {
+    color: var(--primary);
+    padding: 0px 9px;
+}
+
+.services .section-heading p {
+    margin-bottom: 8rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.services .container {
+    width: 1200px;
+    margin: auto;
+}
+
+.services .container .card-wraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+
+}
+
+.services .container .card-wraper .card {
+    background-color: white;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.services .container .card-wraper .card h1{
+    margin-bottom: 16px;
+}
+.services .container .card-wraper .card p{
+    color: var(--liteback);
+    line-height: 1.6;
+}
+.services .container .card-wraper .card img {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .container .card-wraper .card:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.services .container .card-wraper .card:hover p{
+    color: white;
+}
+.freelance{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/camera.png);
+    text-align: center;
+    height: 450px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 76% 75%, 0 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.freelance h1{
+    font-size: 35px;
+    padding-top: 120px;
+}
+.freelance h1 span{
+    color: var(--primary);
+}
+.freelance p{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 0px;
+}
+.freelance button{
+    width: 200px;
+    height: 49px;
+    background-color: var(--primary);
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.freelance button:hover{
+    background-color: #006a9b;
+    color: white;
+    cursor: pointer;
+}
+.reviews{
+    height: 600px;
+}
+.reviews .container{
+    text-align: center;
+}
+.reviews .container h1{
+    margin-top: 80px;
+    color: black;
+    font-size: 35px;
+}
+.reviews .container p{
+    margin-top: 10px;
+}
+.reviews .container h1 span{
+    color: var(--primary);
+}
+.reviews .container .slider .slide img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 30px 0px;
+
+}
+.reviews .container .slider .slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.reviews .container .slider{
+    width: 700px;
+    margin: auto;
+}
+.reviews .container .slider .slide p{
+    color: var(--liteback);
+    margin-bottom: 20px;
+}
+.reviews .container .slider .slide span{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.reviews .container .slidersDots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+.reviews .container .slidersDots{
+    margin-top: 3rem;
+}
+.reviews .container .slidersDots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 4px;
+    border: none;
+    background-color: var(--liteback);
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.reviews .container .slidersDots .dots li.slick-active button{
+    background-color: var(--primary);
+    width: 20px;
 }
